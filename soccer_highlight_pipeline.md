@@ -107,3 +107,27 @@ Install dependencies first:
 ```bash
 pip install pyside6 opencv-python numpy
 ```
+
+
+---
+
+## Change this project to a different Git repo
+
+If you want this project to live in another repository, run:
+
+```bash
+python tools/change_repo_remote.py --new-url <NEW_REPO_URL> --show
+```
+
+Examples:
+
+```bash
+python tools/change_repo_remote.py --new-url git@github.com:your-org/goalie-highlights.git --show
+python tools/change_repo_remote.py --new-url https://github.com/your-org/goalie-highlights.git --remote upstream --show
+```
+
+Then push the current branch to the new remote:
+
+```bash
+git push -u origin work
+```
