@@ -88,3 +88,22 @@ If you want to keep PowerDirector as the editor:
 - Drop all clips on timeline at once and add your titles/music.
 
 This avoids manual trimming of the full game.
+
+---
+
+## Simple GUI launcher (Windows)
+
+A `run.bat` file is included at the project root.
+
+- Double-click `run.bat` to launch a PySide6 desktop app.
+- The GUI lets you:
+  - pick a video,
+  - preview your ROI on the first frame,
+  - run analysis to generate `segments.csv`,
+  - optionally render a stitched highlight video.
+
+Install dependencies first:
+
+```bash
+pip install pyside6 opencv-python numpy
+```
